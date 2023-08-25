@@ -18,9 +18,12 @@ interface TodosDao {
     @Delete
     suspend fun deleteTodo(todo: Todo)
 
-    @Query("SELECT * FROM todos")
+    @Query("SELECT * FROM todos ORDER BY is_done")
     fun getAllTodos(): Flow<List<Todo>>
 
     @Query("SELECT * FROM todos WHERE id = :id")
     fun getTodo(id: Int): Flow<Todo>
+
+    @Query("UPDATE todos SET is_done = :isDone WHERE id = :id")
+    suspend fun updateIsDone(id:Int,isDone:Boolean)
 }

@@ -13,4 +13,6 @@ interface TodosRepository {
     fun getAllTodos(): Flow<List<Todo>>
 
     fun getTodo(id: Int): Flow<Todo>
+
+   suspend fun updateIsDone(id:Int,isDone:Boolean)
 }

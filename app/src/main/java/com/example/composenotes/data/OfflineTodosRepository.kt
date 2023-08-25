@@ -14,4 +14,5 @@ class OfflineTodosRepository @Inject constructor(private val todosDao: TodosDao)
 
     override fun getTodo(id: Int): Flow<Todo> = todosDao.getTodo(id)
 
+    override suspend fun updateIsDone(id: Int, isDone: Boolean) = todosDao.updateIsDone(id, isDone)
 }
