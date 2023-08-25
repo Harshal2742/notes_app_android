@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Compose Notes</string>
+    <string name="start">All Notes</string>
+    <string name="note">Note</string>
+    <string name="create_note">Create Note</string>
+    <string name="todos">To-dos</string>
+</resources>
