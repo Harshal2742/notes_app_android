@@ -4,4 +4,6 @@
     <string name="note">Note</string>
     <string name="create_note">Create Note</string>
     <string name="todos">To-dos</string>
+    <string name="sign_in">Sign in</string>
+    <string name="profile">Profile</string>
 </resources>
